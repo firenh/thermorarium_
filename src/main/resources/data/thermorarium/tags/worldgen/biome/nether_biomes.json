@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "thermorarium:crimson_plains",
+        "thermorarium:warped_plains",
+        "thermorarium:weeping_valley",
+        "thermorarium:blackstone_deltas",
+        "thermorarium:twisted_valley"
+    ]
+}

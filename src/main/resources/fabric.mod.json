@@ -1,0 +1,35 @@
+{
+    "schemaVersion": 1,
+    "id": "thermorarium",
+    "version": "${version}",
+    "name": "Thermorarium",
+    "description": "This is an example description! Tell everyone what your mod is about!",
+    "authors": [
+        "Me!"
+    ],
+    "contact": {
+        "homepage": "https://fabricmc.net/",
+        "sources": "https://github.com/FabricMC/fabric-example-mod"
+    },
+    "license": "LGPL-3.0",
+    "icon": "assets/thermorarium/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "fireopal.thermorarium.Thermorarium"
+        ]
+    },
+    "mixins": [
+        "thermorarium.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.11.3",
+        "fabric": "*",
+        "minecraft": "1.18.x",
+        "java": ">=17"
+    },
+    "suggests": {
+        "another-mod": "*"
+    },
+    "accessWidener": "thermorarium.accesswidener"
+}
