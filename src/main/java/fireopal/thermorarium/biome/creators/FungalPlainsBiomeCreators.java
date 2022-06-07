@@ -79,7 +79,6 @@ public class FungalPlainsBiomeCreators {
 
         return new Biome.Builder()
             .precipitation(Biome.Precipitation.NONE)
-            .category(Biome.Category.NETHER)
             .temperature(2.0f).downfall(0.0f)
             .effects(biomeEffects.build())
             .spawnSettings(spawnSettings.build())

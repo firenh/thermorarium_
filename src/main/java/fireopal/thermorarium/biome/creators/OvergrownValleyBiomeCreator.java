@@ -55,7 +55,7 @@ public class OvergrownValleyBiomeCreator {
             .feature(GenerationStep.Feature.LOCAL_MODIFICATIONS, isCrimson ? ThermorariumPlacedFeatures.SMALL_CRIMSON_NYLIUM_PATCHES_OVERGROWN_VALLEY : ThermorariumPlacedFeatures.SMALL_WARPED_NYLIUM_PATCHES_OVERGROWN_VALLEY)
             .feature(GenerationStep.Feature.VEGETAL_DECORATION, isCrimson ? ThermorariumPlacedFeatures.PATCH_CRIMSON_FUNGUS : ThermorariumPlacedFeatures.PATCH_WARPED_FUNGUS);
         DefaultBiomeFeatures.addNetherMineables(builder);
-        return new Biome.Builder().precipitation(Biome.Precipitation.NONE).category(Biome.Category.NETHER)
+        return new Biome.Builder().precipitation(Biome.Precipitation.NONE)
             .temperature(2.0f).downfall(0.0f)
             .effects(new BiomeEffects.Builder().waterColor(4159204).waterFogColor(329011).fogColor(1787717)
                 .skyColor(OverworldBiomeCreatorInvoker.getSkyColor(2.0f))

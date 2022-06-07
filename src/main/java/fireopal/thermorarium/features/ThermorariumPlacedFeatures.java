@@ -162,7 +162,7 @@ public class ThermorariumPlacedFeatures {
         SquarePlacementModifier.of(),
         CountMultilayerPlacementModifier.of(10), 
         BlockFilterPlacementModifier.of(
-            BlockPredicate.matchingBlock(Blocks.BASALT, new BlockPos(0, -1, 0))
+            BlockPredicate.matchingBlocks(new BlockPos(0, -1, 0), Blocks.BASALT)
         ),
         BiomePlacementModifier.of()
     );
@@ -270,7 +270,7 @@ public class ThermorariumPlacedFeatures {
         CountPlacementModifier.of(UniformIntProvider.create(5, 20)),
         SquarePlacementModifier.of(),
         BlockFilterPlacementModifier.of(
-            BlockPredicate.matchingBlock(Blocks.BLACKSTONE, new BlockPos(0, -1, 0))
+            BlockPredicate.matchingBlocks(new BlockPos(0, -1, 0), Blocks.BLACKSTONE)
         ),
         BiomePlacementModifier.of()
     );

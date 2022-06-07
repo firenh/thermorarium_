@@ -10,6 +10,7 @@ import fireopal.thermorarium.biome.ThermorariumBiomes;
 import fireopal.thermorarium.features.ThermorariumConfiguredFeatures;
 import fireopal.thermorarium.features.ThermorariumPlacedFeatures;
 import fireopal.thermorarium.gen.ThermorariumBiomeAdditions;
+import fireopal.thermorarium.util.MultinoiseCommand;
 
 public class Thermorarium implements ModInitializer {
 	private static final String MODID = "thermorarium";
@@ -25,5 +26,8 @@ public class Thermorarium implements ModInitializer {
 		ThermorariumPlacedFeatures.init();
 		ThermorariumBiomes.init();
 		ThermorariumBiomeAdditions.init();
+		MultinoiseCommand.register();
+
+		// LOGGER.info("Things are working: " + NetherBiomes.canGenerateInNether(ThermorariumBiomeKeys.BLACKSTONE_DELTAS) );
 	}
 }

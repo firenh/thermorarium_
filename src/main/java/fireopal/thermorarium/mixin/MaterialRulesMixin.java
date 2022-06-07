@@ -22,7 +22,7 @@ public class MaterialRulesMixin {
     )
     private static void biome(List<RegistryKey<Biome>> biomes, CallbackInfoReturnable<BiomeMaterialCondition> cir) {
         BiomeMaterialCondition returnValue = cir.getReturnValue();
-        List<RegistryKey<Biome>> returnedBiomes = ((BiomeMaterialConditionInvoker) (Object) returnValue).getField_36414();
+        List<RegistryKey<Biome>> returnedBiomes = ((BiomeMaterialConditionInvoker) (Object) returnValue).getBiomes();
 
         for (RegistryKey<Biome> k : returnedBiomes) {
             // Add crimson biomes to the same surface rules

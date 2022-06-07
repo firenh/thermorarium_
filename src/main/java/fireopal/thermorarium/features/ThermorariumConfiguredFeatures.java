@@ -156,21 +156,22 @@ public class ThermorariumConfiguredFeatures {
         Feature.RANDOM_PATCH, 
         new RandomPatchFeatureConfig(
             96, 12, 3, 
-            PlacedFeatures.createEntry(Feature.RANDOM_SELECTOR, 
-                new RandomFeatureConfig(
-                    List.of(
-                        new RandomFeatureEntry(
-                            PlacedFeatures.createEntry(LARGE_BLACKSTONE_SPIKE,
-                                BlockFilterPlacementModifier.of(
-                                    BlockPredicate.matchingBlock(Blocks.BLACKSTONE, new BlockPos(0, -1, 0))
-                                )
-                            ),
-                            0.1f
-                        )
-                    ),
-                    PlacedFeatures.createEntry(SMALL_BLACKSTONE_SPIKE,
+            PlacedFeatures.createEntry(
+                    Feature.RANDOM_SELECTOR, 
+                    new RandomFeatureConfig(
+                        List.of(
+                            new RandomFeatureEntry(
+                                PlacedFeatures.createEntry(LARGE_BLACKSTONE_SPIKE,
+                                    BlockFilterPlacementModifier.of(
+                                        BlockPredicate.matchingBlocks(new BlockPos(0, -1, 0), Blocks.BLACKSTONE)
+                                    )
+                                ),
+                                0.1f
+                            )
+                        ),
+                        PlacedFeatures.createEntry(SMALL_BLACKSTONE_SPIKE,
                         BlockFilterPlacementModifier.of(
-                            BlockPredicate.matchingBlock(Blocks.BLACKSTONE, new BlockPos(0, -1, 0))
+                            BlockPredicate.matchingBlocks(new BlockPos(0, -1, 0), Blocks.BLACKSTONE)
                         )
                     )
                 )
@@ -340,12 +341,13 @@ public class ThermorariumConfiguredFeatures {
         Feature.RANDOM_PATCH, 
         new RandomPatchFeatureConfig(
             96, 12, 3, 
-            PlacedFeatures.createEntry(Feature.RANDOM_SELECTOR, 
+            PlacedFeatures.createEntry(
+                Feature.RANDOM_SELECTOR, 
                 new RandomFeatureConfig(
                     List.of(),
                     PlacedFeatures.createEntry(BASALT_SPIKE,
                         BlockFilterPlacementModifier.of(
-                            BlockPredicate.matchingBlock(Blocks.BASALT, new BlockPos(0, -1, 0))
+                            BlockPredicate.matchingBlocks(new BlockPos(0, -1, 0), Blocks.BASALT)
                         )
                     )
                 )

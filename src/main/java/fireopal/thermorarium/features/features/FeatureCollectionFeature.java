@@ -1,12 +1,12 @@
 package fireopal.thermorarium.features.features;
 
 import java.util.List;
-import java.util.Random;
 
 import com.mojang.serialization.Codec;
 
 import fireopal.thermorarium.features.features.config.FeatureCollectionFeatureConfig;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.random.Random;
 import net.minecraft.util.registry.RegistryEntry;
 import net.minecraft.world.StructureWorldAccess;
 import net.minecraft.world.gen.chunk.ChunkGenerator;

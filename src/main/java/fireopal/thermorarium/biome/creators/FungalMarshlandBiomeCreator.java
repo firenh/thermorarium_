@@ -90,7 +90,7 @@ public class FungalMarshlandBiomeCreator {
                 .additionsSound(new BiomeAdditionsSound(SoundEvents.AMBIENT_WARPED_FOREST_ADDITIONS, 0.0111))
                 .music(MusicType.createIngameMusic(SoundEvents.MUSIC_NETHER_WARPED_FOREST));
         }
-        return new Biome.Builder().precipitation(Biome.Precipitation.NONE).category(Biome.Category.NETHER)
+        return new Biome.Builder().precipitation(Biome.Precipitation.NONE)
             .temperature(2.0f).downfall(0.0f)
             .effects(biomeEffects.build())
             .spawnSettings(spawnSettings.build()).generationSettings(generationSettings.build()).build();

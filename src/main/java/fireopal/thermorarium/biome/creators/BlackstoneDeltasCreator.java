@@ -49,7 +49,7 @@ public class BlackstoneDeltasCreator {
             .feature(GenerationStep.Feature.UNDERGROUND_DECORATION, ThermorariumPlacedFeatures.ORE_BLACKSTONE_OVER_BASALT)
             .feature(GenerationStep.Feature.VEGETAL_DECORATION, ThermorariumPlacedFeatures.UPSIDE_DOWN_BLACKSTONE_SPIKES);
         DefaultBiomeFeatures.addAncientDebris(builder);
-        return new Biome.Builder().precipitation(Biome.Precipitation.NONE).category(Biome.Category.NETHER)
+        return new Biome.Builder().precipitation(Biome.Precipitation.NONE)
             .temperature(2.0f).downfall(0.0f)
             .effects(new BiomeEffects.Builder().waterColor(4159204).waterFogColor(329011).fogColor(6840176)
                 .skyColor(OverworldBiomeCreatorInvoker.getSkyColor(2.0f))

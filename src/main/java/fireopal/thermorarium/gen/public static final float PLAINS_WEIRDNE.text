@@ -1,0 +1,31 @@
+public static final float PLAINS_WEIRDNESS = 0.6f;
+public static final float DEFAULT_WEIRDNESS = 0f;
+public static final float MARSHLAND_WEIRDNESS = -0.7f;
+public static final float FUNGAL_JUNGLE_WEIRDNESS = 0.85f;
+
+public static void init() { 
+    //  Nether Wastes
+    NetherBiomes.addNetherBiome(BiomeKeys.NETHER_WASTES, MultiNoiseUtil.createNoiseHypercube(0f, 0f, 0f, 0f, 0f, MARSHLAND_WEIRDNESS, 0f));
+    NetherBiomes.addNetherBiome(BiomeKeys.NETHER_WASTES, MultiNoiseUtil.createNoiseHypercube(0f, 0f, 0f, 0f, 0f, PLAINS_WEIRDNESS, 0f));
+    NetherBiomes.addNetherBiome(BiomeKeys.NETHER_WASTES, MultiNoiseUtil.createNoiseHypercube(0f, 0f, 0f, 0f, 0f, FUNGAL_JUNGLE_WEIRDNESS, 0f));
+
+    //  Soul Sand Valley
+    NetherBiomes.addNetherBiome(ThermorariumBiomeKeys.CRIMSON_OVERGROWN_VALLEY, MultiNoiseUtil.createNoiseHypercube(0f, -0.5f, 0f, 0f, 0f, MARSHLAND_WEIRDNESS, 0f));
+    NetherBiomes.addNetherBiome(BiomeKeys.SOUL_SAND_VALLEY, MultiNoiseUtil.createNoiseHypercube(0f, -0.5f, 0f, 0f, 0f, PLAINS_WEIRDNESS, 0f));
+    NetherBiomes.addNetherBiome(ThermorariumBiomeKeys.WARPED_OVERGROWN_VALLEY, MultiNoiseUtil.createNoiseHypercube(0f, -0.5f, 0f, 0f, 0f, FUNGAL_JUNGLE_WEIRDNESS, 0f));
+
+    //  Crimson Forest
+    NetherBiomes.addNetherBiome(ThermorariumBiomeKeys.CRIMSON_MARSHLAND, MultiNoiseUtil.createNoiseHypercube(0.4f, 0f, 0f, 0f, 0f, MARSHLAND_WEIRDNESS, 0f));
+    NetherBiomes.addNetherBiome(ThermorariumBiomeKeys.CRIMSON_PLAINS, MultiNoiseUtil.createNoiseHypercube(0.4f, 0f, 0f, 0f, 0f, PLAINS_WEIRDNESS, 0f));
+    NetherBiomes.addNetherBiome(ThermorariumBiomeKeys.CRIMSON_PLAINS, MultiNoiseUtil.createNoiseHypercube(0.4f, 0f, 0f, 0f, 0f, FUNGAL_JUNGLE_WEIRDNESS, 0f));
+
+    //  Warped Forest 
+    NetherBiomes.addNetherBiome(ThermorariumBiomeKeys.WARPED_MARSHLAND, MultiNoiseUtil.createNoiseHypercube(0f, 0.5f, 0f, 0f, 0f, MARSHLAND_WEIRDNESS, 0.375f));
+    NetherBiomes.addNetherBiome(ThermorariumBiomeKeys.WARPED_PLAINS, MultiNoiseUtil.createNoiseHypercube(0f, 0.5f, 0f, 0f, 0f, PLAINS_WEIRDNESS, 0.375f));
+    NetherBiomes.addNetherBiome(ThermorariumBiomeKeys.WARPED_PLAINS, MultiNoiseUtil.createNoiseHypercube(0f, 0.5f, 0f, 0f, 0f, FUNGAL_JUNGLE_WEIRDNESS, 0.375f));
+
+    // Basalt Deltas
+    NetherBiomes.addNetherBiome(BiomeKeys.BASALT_DELTAS, MultiNoiseUtil.createNoiseHypercube(-0.5f, 0f, 0f, 0f, 0f, MARSHLAND_WEIRDNESS, 0f));
+    NetherBiomes.addNetherBiome(ThermorariumBiomeKeys.BLACKSTONE_DELTAS, MultiNoiseUtil.createNoiseHypercube(-0.5f, 0f, 0f, 0f, 0f, PLAINS_WEIRDNESS, 0f));
+    NetherBiomes.addNetherBiome(BiomeKeys.BASALT_DELTAS, MultiNoiseUtil.createNoiseHypercube(-0.5f, 0f, 0f, 0f, 0f, FUNGAL_JUNGLE_WEIRDNESS, 0f));
+}

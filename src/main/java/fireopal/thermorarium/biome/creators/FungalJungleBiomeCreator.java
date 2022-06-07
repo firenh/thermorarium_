@@ -54,7 +54,7 @@ public class FungalJungleBiomeCreator {
             .feature(GenerationStep.Feature.VEGETAL_DECORATION, ThermorariumPlacedFeatures.WARPED_VEGETATION_FUNGAL_JUNGLE)
             ;
         DefaultBiomeFeatures.addNetherMineables(builder);
-        return new Biome.Builder().precipitation(Biome.Precipitation.NONE).category(Biome.Category.NETHER)
+        return new Biome.Builder().precipitation(Biome.Precipitation.NONE)
             .temperature(2.0f).downfall(0.0f)
             .effects(new BiomeEffects.Builder().waterColor(4159204).waterFogColor(329011).fogColor(0x440033)
                 .skyColor(OverworldBiomeCreatorInvoker.getSkyColor(2.0f))

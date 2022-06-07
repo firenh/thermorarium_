@@ -6,7 +6,8 @@
     "mixins": [
         "OverworldBiomeCreatorInvoker",
         "BiomeMaterialConditionInvoker",
-        "MaterialRulesMixin"
+        "MaterialRulesMixin",
+        "DensityFunctionsMixin"
     ],
     "injectors": {
         "defaultRequire": 1
